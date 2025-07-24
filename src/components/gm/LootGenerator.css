@@ -1,0 +1,258 @@
+.loot-generator {
+  width: 100%;
+}
+
+.generator-header {
+  margin-bottom: 2rem;
+}
+
+.generator-header h3 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.generator-header p {
+  color: #64748b;
+  margin: 0;
+}
+
+.loot-settings {
+  background: #fefbf3;
+  border: 2px solid #c4a25a;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.loading-info {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #8b6914;
+  font-style: italic;
+}
+
+.setting-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.setting-group label {
+  font-weight: 600;
+  color: #2a1c0f;
+  font-size: 0.875rem;
+  font-family: Garamond, Times New Roman, serif;
+}
+
+.setting-group input,
+.setting-group select {
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #c4a25a;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background: #fefbf3;
+  color: #2a1c0f;
+  font-family: Garamond, Times New Roman, serif;
+  transition: border-color 200ms, background-color 200ms;
+}
+
+.setting-group input:focus,
+.setting-group select:focus {
+  outline: none;
+  border-color: #a88b53;
+  background: #fff8e1;
+  box-shadow: 0 0 0 3px rgba(196, 162, 90, 0.2);
+}
+
+.loot-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.generate-btn,
+.clear-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.generate-btn {
+  background: #059669;
+  color: white;
+}
+
+.generate-btn:hover {
+  background: #047857;
+}
+
+.clear-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #374151;
+}
+
+.loot-result {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.loot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.loot-result h4 {
+  color: #1e293b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.treasure-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.treasure-base,
+.treasure-final {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.treasure-base {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.treasure-final {
+  background: #c4a25a;
+  color: white;
+}
+
+.loot-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.loot-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  transition: all 200ms;
+}
+
+.loot-item:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #2a1c0f;
+  font-family: Garamond, Times New Roman, serif;
+}
+
+.item-category {
+  font-size: 0.75rem;
+  color: #8b6914;
+  font-style: italic;
+}
+
+.item-type {
+  font-size: 0.75rem;
+  color: #8b6914;
+  font-weight: 500;
+}
+
+.item-level {
+  background: #c4a25a;
+  color: #2a1c0f;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-family: Garamond, Times New Roman, serif;
+}
+
+.item-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-value {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.item-rarity {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: rgba(107, 114, 128, 0.1);
+}
+
+@media (max-width: 768px) {
+  .loot-settings {
+    grid-template-columns: 1fr;
+  }
+  
+  .loot-actions {
+    justify-content: stretch;
+  }
+  
+  .generate-btn,
+  .clear-btn {
+    flex: 1;
+  }
+  
+  .loot-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .item-meta {
+    align-self: flex-end;
+  }
+}

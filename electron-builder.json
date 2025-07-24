@@ -1,0 +1,32 @@
+{
+  "appId": "com.pf2e.assistant",
+  "productName": "PF2e Assistant",
+  "directories": {
+    "output": "electron-dist"
+  },
+  "files": [
+    "dist/**/*",
+    "public/main.js",
+    "public/preload.js",
+    "public/pf2e_clean_data.sqlite",
+    "node_modules/**/*"
+  ],
+  "extraResources": [
+    {
+      "from": "public/pf2e_clean_data.sqlite",
+      "to": "pf2e_clean_data.sqlite"
+    }
+  ],
+  "win": {
+    "target": "nsis",
+    "icon": "public/vite.svg"
+  },
+  "mac": {
+    "target": "dmg",
+    "icon": "public/vite.svg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "icon": "public/vite.svg"
+  }
+}

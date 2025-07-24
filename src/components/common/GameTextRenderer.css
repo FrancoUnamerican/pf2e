@@ -1,0 +1,67 @@
+.game-text {
+  font-family: 'Garamond', 'Times New Roman', serif;
+  color: #2a1c0f;
+}
+
+.game-text-loading {
+  font-style: italic;
+  color: #666;
+}
+
+/* PF2e Check styles */
+.pf2e-check {
+  display: inline-block;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #2563eb;
+  transition: all 0.2s ease;
+}
+
+.pf2e-check:hover {
+  background: linear-gradient(135deg, #357abd, #2563eb);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* PF2e Damage styles */
+.pf2e-damage {
+  display: inline-block;
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: 600;
+  border: 1px solid #991b1b;
+  transition: all 0.2s ease;
+}
+
+.pf2e-damage:hover {
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pf2e-damage.area-damage {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border-color: #b45309;
+}
+
+.pf2e-damage.area-damage:hover {
+  background: linear-gradient(135deg, #d97706, #b45309);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .pf2e-check,
+  .pf2e-damage {
+    font-size: 0.8em;
+    padding: 1px 4px;
+  }
+}

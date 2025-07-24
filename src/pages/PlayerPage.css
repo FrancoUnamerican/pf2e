@@ -1,0 +1,52 @@
+.player-page {
+  width: 100%;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fffaf0;
+  border: 1px solid #c4a25a;
+  border-radius: 5px;
+}
+
+.page-header h2 {
+  color: #2a1c0f;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  font-family: 'Garamond', 'Times New Roman', serif;
+}
+
+.tab-navigation {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 2px solid #c4a25a;
+}
+
+.tab-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: none;
+  color: #555;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 200ms;
+  font-family: 'Garamond', 'Times New Roman', serif;
+}
+
+.tab-button:hover {
+  color: #2a1c0f;
+  background-color: #fff8e1;
+}
+
+.tab-button.active {
+  color: #c4a25a;
+  border-bottom-color: #c4a25a;
+  background-color: #fff8e1;
+}
+
+.tab-content {
+  padding-top: 2rem;
+}
